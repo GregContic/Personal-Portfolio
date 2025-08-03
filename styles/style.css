@@ -1,0 +1,105 @@
+
+/* Reset & Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #181a20;
+  color: #eaeaea;
+  min-height: 100vh;
+}
+
+/* Split Layout */
+.code-canvas-container {
+  display: flex;
+  height: 100vh;
+}
+
+.code-panel {
+  width: 50%;
+  background: #232946;
+  padding: 32px 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid #232946;
+  box-shadow: 2px 0 16px 0 rgba(0,0,0,0.12);
+}
+
+.preview-panel {
+  width: 50%;
+  background: #1a1c23;
+  padding: 32px 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Code Editor Look */
+.code-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.code-tab {
+  background: #181a20;
+  color: #b4befe;
+  border: none;
+  border-radius: 6px 6px 0 0;
+  padding: 8px 18px;
+  font-family: 'Fira Mono', 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.code-tab.active, .code-tab:hover {
+  background: #232946;
+  opacity: 1;
+}
+
+.code-block {
+  background: #181a20;
+  color: #eaeaea;
+  border-radius: 0 0 8px 8px;
+  padding: 18px;
+  font-family: 'Fira Mono', 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  overflow-x: auto;
+  min-height: 220px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+}
+
+/* PrismJS or Shiki theme overrides can go here */
+
+/* Preview Panel */
+.preview-mockup {
+  background: #232946;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+  width: 100%;
+  max-width: 420px;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .code-canvas-container {
+    flex-direction: column;
+  }
+  .code-panel, .preview-panel {
+    width: 100%;
+    min-height: 50vh;
+    border-right: none;
+    border-bottom: 2px solid #232946;
+  }
+}
