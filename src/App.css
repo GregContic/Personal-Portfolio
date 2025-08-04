@@ -1,0 +1,82 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6fb;
+  color: #222;
+}
+
+.portfolio-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px;
+}
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border: 4px solid #2a4d69;
+}
+
+.portfolio-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #2a4d69;
+}
+
+.subtitle {
+  margin: 8px 0 0 0;
+  color: #4b86b4;
+  font-size: 1.2rem;
+}
+
+.about-section, .projects-section, .contact-section {
+  margin-bottom: 32px;
+}
+
+h2 {
+  color: #2a4d69;
+  margin-bottom: 12px;
+}
+
+.projects-section ul {
+  padding-left: 20px;
+}
+
+.projects-section li {
+  margin-bottom: 8px;
+}
+
+.contact-section p {
+  margin: 0 0 8px 0;
+  color: #4b86b4;
+}
+
+.contact-section a {
+  color: #2a4d69;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .portfolio-container {
+    padding: 12px;
+  }
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+  .portfolio-header h1 {
+    font-size: 1.5rem;
+  }
+}

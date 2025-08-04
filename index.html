@@ -1,52 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code & Canvas Portfolio</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <nav class="project-navbar" style="width:100vw;display:flex;align-items:center;justify-content:space-between;padding:18px 32px 0 32px;">
-    <div class="project-nav-list" style="display:flex;gap:18px;">
-      <button class="project-nav active">Product Page</button>
-      <button class="project-nav">Portfolio</button>
-      <button class="project-nav">Landing</button>
-    </div>
-    <div class="project-filters" style="display:flex;gap:10px;">
-      <button class="project-filter active">All</button>
-      <button class="project-filter">Web App</button>
-      <button class="project-filter">Mobile</button>
-      <button class="project-filter">Full Stack</button>
-    </div>
-  </nav>
-
-  <section class="projects-section" style="width:100vw;">
-    <!-- Project 1: Product Page -->
-    <div class="code-canvas-container" id="project-1">
-      <div class="code-panel">
-        <div class="code-tabs">
-          <button class="code-tab active">App.jsx</button>
-          <button class="code-tab">styles.css</button>
-          <button class="code-tab">config.js</button>
-        </div>
-        <pre class="code-block"><code class="language-jsx"></code></pre>
-        <button class="show-more-btn">Show More Code</button>
-        <input type="range" min="1" max="3" value="1" class="code-slider" />
-      </div>
-      <div class="preview-panel">
-        <div class="preview-mockup"></div>
-        <div class="view-toggle" style="margin-top:24px;display:flex;gap:12px;">
-          <button class="active">Split View</button>
-          <button>Dev View</button>
-          <button>Client View</button>
-        </div>
-      </div>
-    </div>
-    <!-- Add more .code-canvas-container for more projects if needed -->
-  </section>
-
-  <script src="scripts/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
